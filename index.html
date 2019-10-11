@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=devide-width, initial-scale=1, shrink-to-fit">
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Overwatch heroes</title>
+    </head>
+    <body>
+        <!-- #react: main-component -->
+        <main class="container">
+            <h1>Overwatch Heroes</h1>
+            <!-- #react: Filters component -->
+            <section id="filters-component">
+                <!-- Roles filter -->
+                <div>
+                    <a href="#"><img src="img/damage_icon_big.png"></a>
+                    <a href="#"><img src="img/tank_icon_big.png"></a>
+                    <a href="#"><img src="img/support_icon_big.png"></a>
+                </div>
+                <!-- Other filters-->
+                <div>
+                    <input type="text" name="hero_name">
+                    <div>
+                        <!-- difficult filter here -->
+                    </div>
+                </div>
+            </section>
+            <!-- #react: heroes list component / #bootstrap: container -->
+            <section id="heroes-list-component" class="container">
+                <!-- #react: hero component / #bootstra: hero card -->
+                <div id="hero-component" class="row">
+                    <div class="col-12 col-lg-3">
+                        <img src="img/ana/portrait.png" title="Ana" alt="Ana">
+                        <h2>Ana</h2>
+                    </div>  
+                    <div class="col-12 col-lg-9">
+                        <h3>História</h3>
+                        <p class="history">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut finibus enim. Ut luctus risus vitae feugiat porta. Suspendisse vitae libero elit. Vivamus accumsan feugiat venenatis. Nunc nibh arcu, lobortis vel fringilla in, imperdiet eget justo. Pellentesque consectetur nisi ut ante ornare, et congue nisi efficitur.</p>
+                        <ul class="abilities-detais">
+                            <li class="ability">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut finibus enim.</li>
+                            <li class="ability">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut finibus enim.</li>
+                            <li class="ability">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut finibus enim.</li>
+                        </ul>
+                        <div>
+                            <div class="weapon">
+                                <a href="#"><img src="img/ana/biotic_rifle.png" title="Biotic Rifle" alt="Biotic Rifle"></a>
+                                <p>Weapon description</p>
+                            </div>
+                            <div class="abilities">
+                                <a href="#"><img src="img/ana/biotic_grenade.png" title="Biotic Grenade" alt="Biotic Grenade"></a>
+                                <a href="#"><img src="img/ana/sleep_dart.png" title="Sleep Dart" alt="Sleep Dart"></a>
+                                <a href="#"><img src="img/ana/nano_boost.png" title="Nano Boost" alt="Nano Boost"></a>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </section>
+        </main>
+        <script src="scripts/popper.js"></script>
+        <script src="scripts/jquery-3.3.1.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+    </body>
+</html>

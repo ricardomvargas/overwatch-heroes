@@ -1,0 +1,7 @@
+.weapon a, .abilities a{
+    background-color: #333;
+    display:inline-block;
+}
+.weapon a {
+    float: left;
+}
