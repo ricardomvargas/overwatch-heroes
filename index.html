@@ -10,38 +10,62 @@
         <link rel="stylesheet" href="styles/style.css">
         <title>Overwatch heroes</title>
     </head>
-    <body>
+    <body class="bg-dark">
         <!-- #react: main-component -->
-        <main class="container">
-            <h1>Overwatch Heroes</h1>
+        <main class="container p-0">
+            <h1 class="title text-center font-weight-bold bg-dark pb-2 m-0">Overwatch Heroes</h1>
             <!-- #react: Filters component -->
             <section id="filters-component">
                 <!-- Roles filter -->
-                <div>
-                    <a href="#"><img src="img/damage_icon_big.png"></a>
-                    <a href="#"><img src="img/tank_icon_big.png"></a>
-                    <a href="#"><img src="img/support_icon_big.png"></a>
+                <h2 class="font-weight-bold text-center bg-not-selected pt-2 pb-2">FILTERS</h2>
+                <!-- Name and difficult filters-->
+                <div class="container">
+                    <ul class="row">
+                        <li class="col-12 col-md-6 text-center">
+                            <label for="filter-name">Hero name:</label>
+                            <input id="filter-name" type="text" name="filter-name">
+                        </li>
+                        <li class="col-12 col-md-6 text-center">
+                            <label for="filter-diffitult">Hero difficult:</label>
+                            <select id="filter-difficult" name="filter-difficult">
+                                <option value="0">-- select ---</option>
+                                <option value="1">Easy</option>
+                                <option value="2">Moderate</option>
+                                <option value="4">Difficult</option>
+                            </select>
+                        </li>
+                    </ul>
                 </div>
-                <!-- Other filters-->
-                <div>
-                    <input type="text" name="hero_name">
-                    <div>
-                        <!-- difficult filter here -->
-                    </div>
+                <div class="container filter-roles">
+                    <ul class="row">
+                        <li class="col-12 col-md-4 text-center">
+                            <a class="bg-not-selected" href="#"><img src="img/damage_icon_big.png" title="Damage" alt="Damage"></a>
+                            <p class="filter-title bg-damage text-white">DAMAGE</p>
+                        </li>
+                        <li class="col-12 col-md-4 text-center">
+                            <a class="bg-not-selected" href="#"><img src="img/tank_icon_big.png" title="Tank" alt="Tank"></a>
+                            <p class="filter-title bg-tank text-white">TANK</p>
+                        </li>
+                        <li class="col-12 col-md-4 text-center">
+                            <a class="bg-support" href="#"><img src="img/support_icon_big.png" title="Support" alt="Support"></a>
+                            <p class="filter-title bg-support text-white">SUPPORT</p>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <!-- #react: heroes list component / #bootstrap: container -->
-            <section id="heroes-list-component" class="container">
-                <!-- #react: hero component / #bootstra: hero card -->
+            <section id="heroes-list-component" class="container p-0">
+                <h2 class="font-weight-bold text-center bg-not-selected pt-2 pb-2">HEROES</h2>
+                <!-- #react: hero component / #bootstrap: hero card -->
                 <div id="hero-component" class="row">
                     <div class="col-12 col-lg-3">
                         <img src="img/ana/portrait.png" title="Ana" alt="Ana">
                         <h2>Ana</h2>
                     </div>  
                     <div class="col-12 col-lg-9">
-                        <h3>História</h3>
+                        <h3>History</h3>
                         <p class="history">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut finibus enim. Ut luctus risus vitae feugiat porta. Suspendisse vitae libero elit. Vivamus accumsan feugiat venenatis. Nunc nibh arcu, lobortis vel fringilla in, imperdiet eget justo. Pellentesque consectetur nisi ut ante ornare, et congue nisi efficitur.</p>
-                        <ul class="abilities-detais">
+                        <ul class="abilities-details">
                             <li class="ability">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut finibus enim.</li>
                             <li class="ability">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut finibus enim.</li>
                             <li class="ability">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut finibus enim.</li>
