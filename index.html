@@ -57,10 +57,15 @@
             <section id="heroes-list-component" class="container p-0">
                 <h2 class="font-weight-bold text-center bg-not-selected pt-2 pb-2">HEROES</h2>
                 <!-- #react: hero component / #bootstrap: hero card -->
+                <!-- Os campos 'arma' e 'habilidades' contém textos separados por '|', onde a primeira parte é o nome da 
+                arma/habilidade, a segunda é a descrição e a terceira é o nome da imagem na pasta (todas as imagens são .PNG). -->
                 <div id="hero-component" class="row">
                     <div class="col-12 col-lg-3">
+                        <!-- Para buscar a imagem de perfil na pasta, basca usar o campo apelido em minusculo do arquivo heroes.json-->
                         <img src="img/ana/portrait.png" title="Ana" alt="Ana">
                         <h2>Ana</h2>
+                        <img src="img/hard_icon.png" title="Hard" alt="Hard">
+                        <p>Suporte</p>
                     </div>  
                     <div class="col-12 col-lg-9">
                         <h3>History</h3>
@@ -84,9 +89,64 @@
                     </div>                    
                 </div>
             </section>
+            <h1>Teste do card</h1>
+            <section class="card-group">
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="d-flex">
+                            <li class="flex-grow-1"><h2 class="card-title">Ana</h2></li>
+                            <li><img style="height: 40px" src="img/support_icon_small.png" title="Suporte" alt="Suporte"></li>
+                            <li><img src="img/hard_icon.png" title="Hard" alt="Hard"></li>
+                        </ul>
+                        <img style="height: 180px" class="float-left" src="img/ana/portrait.png" title="Ana" alt="Ana">
+                        <ul>
+                            <li>Nome: Ana Amari</li>
+                            <li>Idade: 60</li>
+                            <li>Ocupação: Caçadora de recompensas</li>
+                            <li>Base de operação: Cairo, Egito</li>
+                            <li>Afiliação: Overwatch (Anteriormente)</li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="historia">
+                            <h3>História</h3>
+                            <p class="historia">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut finibus enim. Ut luctus risus vitae feugiat porta. Suspendisse vitae libero elit. Vivamus accumsan feugiat venenatis. Nunc nibh arcu, lobortis vel fringilla in, imperdiet eget justo. Pellentesque consectetur nisi ut ante ornare, et congue nisi efficitur.</p>
+                        </div>
+                        <ul class="habilidades-detalhes">
+                            <li class="ability">DARDO SONÍFERO: Ana dispara um dardo de sua arma secundária, deixando seus inimigos inconscientes (porém eles despertam ao receber dano).</li>
+                            <li class="ability">GRANADA BIÓTICA: Ana lança uma granada biótica que causa dano aos inimigos e cura os aliados em uma pequena área de efeito. Aliados afetados recebem por tempo limitado cura aumentada de todas as fontes, enquanto inimigos pegos pela explosão não podem se curar por alguns instantes.</li>
+                            <li class="ability">ESTIMULANTE: Depois que Ana atinge seus aliados com um estimulante de combate, eles causam mais dano e recebem menos dano dos ataques inimigos temporariamente.</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="habilidades d-flex">
+                            <li class="bg-support"><a href="#"><img src="img/ana/biotic_granade.png" title="Biotic Grenade" alt="Biotic Grenade"></a></li>
+                            <li class="bg-not-selected"><a href="#"><img src="img/ana/sleep_dart.png" title="Sleep Dart" alt="Sleep Dart"></a></li>
+                            <li class="bg-not-selected"><a href="#"><img src="img/ana/nano_boost.png" title="Nano Boost" alt="Nano Boost"></a></li>
+                        </ul>
+                        <ul>
+                            <li>Posição: Suporte</li>
+                            <li>Dificuldade: 3</li>
+                            <li>
+                                <p>RIFLE BIÓTICO: rifle de Ana atira dardos que podem restaurar a vida de seus aliados ou causar dano continuado a seus inimigos. Ela é capaz de usar a mira telescópica de seu rifle para dar tiros incrivelmente precisos.</p>
+                                <img src="img/ana/biotic_rifle.png" title="Biotic Rifle" alt="Biotic Rifle">
+                            </li>
+                        </ul>     
+                    </div>
+                </div>
+            </section>
         </main>
+        <!-- bootstrap -->
         <script src="scripts/popper.js"></script>
         <script src="scripts/jquery-3.3.1.min.js"></script>
         <script src="scripts/bootstrap.min.js"></script>
+        <!-- react.js-->
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script>window.React || document.write('<script src="scripts/react.development.js"><\/script>')</script>
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script>window.ReactDOM || document.write('<script src="scripts/react-dom.development.js"><\/script>')</script>
+        <!-- babel -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <!-- outros -->
     </body>
 </html>
