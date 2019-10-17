@@ -10,7 +10,6 @@ ul li a {display: inline-block}
 /******************
 ID'S
 *******************/
-
 /******************
 CLASSES
 *******************/
@@ -18,20 +17,19 @@ CLASSES
     color: #e5d429;
     font-size: 1.8em;
 }
-.filter-roles a {width: 175px}
 .filter-title {
     width: 175px;
     display: block;
     margin: 0 auto;
 }
-.bg-damage { background-color:#e52128 }
-.bg-tank{ background-color: #f9a32c }
-.bg-support{ background-color:#02a34a }
-.bg-not-selected { background-color: #ccc}
+.filter-roles a {width: 175px}
+.filter-block {width: 300px}
+.bg-damage {background-color:#e52128}
+.bg-tank{background-color: #f9a32c}
+.bg-support{background-color:#02a34a}
+.bg-not-selected {background-color: #ccc}
 .weapon a, .abilities a{
     background-color: #333;
     display:inline-block;
 }
-.weapon a {
-    float: left;
-}
+.weapon a {float: left;}
