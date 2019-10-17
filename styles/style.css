@@ -2,7 +2,10 @@
 SELETORES
 *******************/
 body {color: #5d5d5d}
-main {background-color: #f7f7f7}
+main {
+    background-color: #f7f7f7;
+    min-width: 320px;
+}
 h1 {font-size: 1.4em;}
 h2, h3 {font-size: 1.1em}
 p {font-size: 1em}
@@ -10,6 +13,7 @@ ul li a {display: inline-block}
 /******************
 ID'S
 *******************/
+/*#filter-difficulty option[value="easy"] {background: url(../img/easy_icon.png) no-repeat center;}*/
 /******************
 CLASSES
 *******************/
@@ -22,8 +26,18 @@ CLASSES
     display: block;
     margin: 0 auto;
 }
-.filter-roles a {width: 175px}
+/*.filter-roles a {width: 175px}*/
 .filter-block {width: 300px}
+.filter-role-name { width: 70px;}
+.filter-img-damage, .filter-img-tank, .filter-img-support {
+    width: 70px; 
+    height: 59px; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+.filter-img-damage { background-image: url(../img/damage_icon_mini.png); }
+.filter-img-tank { background-image: url(../img/tank_icon_mini.png);}
+.filter-img-support { background-image: url(../img/support_icon_mini.png);}
 .bg-damage {background-color:#e52128}
 .bg-tank{background-color: #f9a32c}
 .bg-support{background-color:#02a34a}
@@ -33,3 +47,32 @@ CLASSES
     display:inline-block;
 }
 .weapon a {float: left;}
+/**********************
+    MEDIA QUERIES
+**********************/
+@media only screen and (min-width: 300px) and (max-width: 479px) { 
+    /*.filter-img { height: 30%; }*/
+}
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+    /*.filter-img { height: 30%; }*/   
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .filter-role-name { width: 110px;}
+    .filter-img-damage, .filter-img-tank, .filter-img-support { 
+        width: 110px; 
+        height: 94px; 
+    }
+    .filter-img-damage { background-image: url(../img/damage_icon_mid.png); }
+    .filter-img-tank { background-image: url(../img/tank_icon_mid.png);}
+    .filter-img-support { background-image: url(../img/support_icon_mid.png);}
+}
+@media only screen and (min-width: 768px) {
+    .filter-role-name { width: 175px;}
+    .filter-img-damage, .filter-img-tank, .filter-img-support { 
+        width: 175px; 
+        height: 150px; 
+    }
+    .filter-img-damage { background-image: url(../img/damage_icon_big.png); }
+    .filter-img-tank { background-image: url(../img/tank_icon_big.png);}
+    .filter-img-support { background-image: url(../img/support_icon_big.png);}
+}
