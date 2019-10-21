@@ -6,17 +6,28 @@ main {
     background-color: #f7f7f7;
     min-width: 320px;
 }
-h1 {font-size: 1.4em;}
-h2, h3 {font-size: 1.1em}
-p {font-size: 1em}
-ul li a {display: inline-block}
+h1 {font-size: 1.2em;}
+h2 {font-size: 1.1em}
+h3 {font-size: 1em}
+p {font-size: 0.8em}
+/*ul li a {display: inline-block}*/
 /******************
 ID'S
 *******************/
+#hero-component div ul li img {
+    border: solid 1px #333; 
+    padding: 2px;
+}
+#hero-component div ul li h2 {text-align: center;}
+#hero-component .img-skill {height: 80px;}
 /*#filter-difficulty option[value="easy"] {background: url(../img/easy_icon.png) no-repeat center;}*/
 /******************
 CLASSES
 *******************/
+/*A CLASSE ABAIXO FOI CRIADA PARA SUPRIR A NESCESSIDADE DE REDUZIR O TAMANHO DA IMAGEM. 
+PREISO FAZER ISSO EM UM PROGRMA DE EDIÇÃO DE IMAGENS*/
+.img-icon-roles {height: 30px}
+.site-logo{ width: 50%;}
 .title { 
     color: #e5d429;
     font-size: 1.8em;
@@ -42,21 +53,38 @@ CLASSES
 .bg-tank{background-color: #f9a32c}
 .bg-support{background-color:#02a34a}
 .bg-not-selected {background-color: #ccc}
-.weapon a, .abilities a{
+/*.weapon a, .abilities a{
     background-color: #333;
     display:inline-block;
 }
-.weapon a {float: left;}
+.weapon a {float: left;}*/
 /**********************
     MEDIA QUERIES
 **********************/
-@media only screen and (min-width: 300px) and (max-width: 479px) { 
-    /*.filter-img { height: 30%; }*/
+/* OS COMETÁRIOS ABAIXO SÃO DAS MEDIA QUERIES DO BOOTSTRAP,
+REMOVE-LOS ANTES DE SUBIR O PROJETO PARA O GITHUB.
+Extra small devices (portrait phones, less than 576px)
+ No media query since this is the default in Bootstrap*/
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { }
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    /* #hero-component .order-md-3 { background-color: yellow;} */
+    .site-logo{ width: 30%;}
 }
-@media only screen and (min-width: 480px) and (max-width: 600px) {
-    /*.filter-img { height: 30%; }*/   
-}
-@media only screen and (min-width: 600px) and (max-width: 767px) {
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    /******************
+    SELETORES
+    *******************/
+    h1 {font-size: 1.3em;}
+    h2 {font-size: 1.2em}
+    h3 {font-size: 1.1em}
+    p {font-size: 1em}
+    /******************
+    CLASSES
+    *******************/
+    .site-logo{ width: 20%;}
     .filter-role-name { width: 110px;}
     .filter-img-damage, .filter-img-tank, .filter-img-support { 
         width: 110px; 
@@ -65,8 +93,26 @@ CLASSES
     .filter-img-damage { background-image: url(../img/damage_icon_mid.png); }
     .filter-img-tank { background-image: url(../img/tank_icon_mid.png);}
     .filter-img-support { background-image: url(../img/support_icon_mid.png);}
+    .hero-portrait {margin-right: 5px;}
+    /******************
+    ID'S
+    *******************/
+    #hero-component .img-skill {height: 100%;}
+    /* #hero-component .order-md-3 {background-color: red;} */
 }
-@media only screen and (min-width: 768px) {
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    /******************
+    SELETORES
+    *******************/
+    h1 {font-size: 1.3em;}
+    h2 {font-size: 1.2em}
+    h3 {font-size: 1.1em}
+    p {font-size: 1em}
+    /******************
+    CLASSES
+    *******************/
+    .site-logo{ width: 20%;}
     .filter-role-name { width: 175px;}
     .filter-img-damage, .filter-img-tank, .filter-img-support { 
         width: 175px; 
@@ -75,4 +121,10 @@ CLASSES
     .filter-img-damage { background-image: url(../img/damage_icon_big.png); }
     .filter-img-tank { background-image: url(../img/tank_icon_big.png);}
     .filter-img-support { background-image: url(../img/support_icon_big.png);}
+    .hero-portrait {margin-right: 5px;}
+    /******************
+    ID'S
+    *******************/
+    #hero-component .img-skill {height: 100%;}
+    /* #hero-component .order-md-3 {background-color: gray;} */
 }
