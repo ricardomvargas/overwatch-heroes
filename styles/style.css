@@ -14,12 +14,6 @@ p {font-size: 0.8em}
 /******************
 ID'S
 *******************/
-#hero-component div ul li img {
-    border: solid 1px #333; 
-    padding: 2px;
-}
-#hero-component div ul li h2 {text-align: center;}
-#hero-component .img-skill {height: 80px;}
 /*#filter-difficulty option[value="easy"] {background: url(../img/easy_icon.png) no-repeat center;}*/
 /******************
 CLASSES
@@ -49,6 +43,12 @@ PREISO FAZER ISSO EM UM PROGRMA DE EDIÇÃO DE IMAGENS*/
 .filter-img-damage { background-image: url(../img/damage_icon_mini.png); }
 .filter-img-tank { background-image: url(../img/tank_icon_mini.png);}
 .filter-img-support { background-image: url(../img/support_icon_mini.png);}
+.hero-component div ul li img {
+    border: solid 1px #333; 
+    padding: 2px;
+}
+.hero-component div ul li h2 {text-align: center;}
+.hero-component .img-skill {height: 80px;}
 .bg-damage {background-color:#e52128}
 .bg-tank{background-color: #f9a32c}
 .bg-support{background-color:#02a34a}
@@ -65,7 +65,7 @@ PREISO FAZER ISSO EM UM PROGRMA DE EDIÇÃO DE IMAGENS*/
 @media (min-width: 576px) { }
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    /* #hero-component .order-md-3 { background-color: yellow;} */
+    /* .hero-component .order-md-3 { background-color: yellow;} */
     .site-logo{ width: 30%;}
 }
 /* Large devices (desktops, 992px and up)*/
@@ -90,11 +90,11 @@ PREISO FAZER ISSO EM UM PROGRMA DE EDIÇÃO DE IMAGENS*/
     .filter-img-tank { background-image: url(../img/tank_icon_mid.png);}
     .filter-img-support { background-image: url(../img/support_icon_mid.png);}
     .hero-portrait {margin-right: 5px;}
+    .hero-component .img-skill {height: 100%;}
+    /* .hero-component .order-md-3 {background-color: red;} */
     /******************
     ID'S
     *******************/
-    #hero-component .img-skill {height: 100%;}
-    /* #hero-component .order-md-3 {background-color: red;} */
 }
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
@@ -118,9 +118,9 @@ PREISO FAZER ISSO EM UM PROGRMA DE EDIÇÃO DE IMAGENS*/
     .filter-img-tank { background-image: url(../img/tank_icon_big.png);}
     .filter-img-support { background-image: url(../img/support_icon_big.png);}
     .hero-portrait {margin-right: 5px;}
+    .hero-component .img-skill {height: 100%;}
+    /* .hero-component .order-md-3 {background-color: gray;} */
     /******************
     ID'S
     *******************/
-    #hero-component .img-skill {height: 100%;}
-    /* #hero-component .order-md-3 {background-color: gray;} */
 }
