@@ -61,10 +61,6 @@ PREISO FAZER ISSO EM UM PROGRMA DE EDIÇÃO DE IMAGENS*/
 /**********************
     MEDIA QUERIES
 **********************/
-/* OS COMETÁRIOS ABAIXO SÃO DAS MEDIA QUERIES DO BOOTSTRAP,
-REMOVE-LOS ANTES DE SUBIR O PROJETO PARA O GITHUB.
-Extra small devices (portrait phones, less than 576px)
- No media query since this is the default in Bootstrap*/
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { }
 /* Medium devices (tablets, 768px and up)*/
