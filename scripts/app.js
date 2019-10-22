@@ -1,9 +1,108 @@
 (function() {
     "use strict";
+    /** Main app class.
+     * 
+     */
+    class HeroesApp extends React.Component{
+        constructor(props) {
+            super(props);
+        }
+        render() {
+            return (
+                <main className="container-fluid">
+                    <div className="text-center bg-secondary p-1">
+                        <img className="site-logo" src="img/overwatch_logo.png" alt="Overwatch" title="Overwacth" />
+                        <h1 className="font-bold text-warning">HEROES</h1>
+                    </div>
+                    <HeroesFilter />
+                    <HeroesList />
+                </main>
+            );
+        }
+    }
+    /** Class with filter options for listing Heroes.
+     * 
+     */
+    class HeroesFilter extends React.Component {
+        constructor(props) {
+            super(props);
+            this.setState({
+                heroName: "",
+                heroDifficulty: "",
+                heroRole: ""
+            });
+        }
+        render(){
+            return(
+                <section id="filters-component">
+                    <h1 className="font-weight-bold text-center bg-dark text-warning pt-2 pb-2">FILTERS</h1>
+                    <div className="container-fluid">
+                        <ul className="row">
+                            <li className="col-sm-12 col-md-6">
+                                <div className="mx-auto filter-block">
+                                    <label htmlFor="filter-name">Hero name:</label>
+                                    <input id="filter-name" type="text" name="filter-name" />
+                                </div>
+                            </li>
+                            <li className="col-sm-12 col-md-6">
+                                <div className="mx-auto filter-block">
+                                    <label fohtmlForr="filter-diffitulty">Hero difficult:</label>
+                                    <select id="filter-difficulty" name="filter-difficulty">
+                                        <option value="0">-- select ---</option>
+                                        <option value="easy">Easy</option>
+                                        <option value="modarate">Moderate</option>
+                                        <option value="difficult">Difficult</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="container-fluid filter-roles">
+                        <ul className="row">
+                            <li className="col-4">
+                                <a href="#" class="filter-img-damage d-block mx-auto"></a>
+                                <p className="filter-role-name mx-auto text-center">DAMAGE</p>
+                            </li>
+                            <li className="col-4">
+                                <a href="#" className="filter-img-tank d-block mx-auto"></a>
+                                <p className="filter-role-name mx-auto text-center">TANK</p>
+                            </li>
+                            <li className="col-4">
+                                <a href="#" className="filter-img-support d-block mx-auto"></a>
+                                <p className="filter-role-name mx-auto text-center">SUPPORT</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            );
+        }
+    }
+    /** Class that display a list of Heroes.
+     * 
+     */
+    class HeroesList extends React.Component {
+        constructor(props) {
+            super(props);
+            this.setState({
+                heroesList: []
+            });
+        }
+        render() {
+            return(
+                <section id="heroes-list-component" class="container-fluid p-0">
+                    <h1 className="font-weight-bold text-center bg-dark text-warning pt-2 pb-2">HEROES</h1>
+                    <Hero />
+                </section>
+            );
+        }
+    }
+    /** Class that display a Hero detail.
+     * TO-DO: Check if is necessary to be a class or if can just be a fuction.
+     */
     class Hero extends React.Component {
         constructor(props){
             super(props);
-            // propos: nome
+            // propos: name, role, difficulty, habilitiesList [name, img, description] 
         }
         render() {
             return (
@@ -44,5 +143,5 @@
             );
         }
     }
-    ReactDOM.render(<Hero />, document.getElementById("react-ana"));
+    ReactDOM.render(<HeroesApp />, document.getElementById("heroes-app"));
 })();
