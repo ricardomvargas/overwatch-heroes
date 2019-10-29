@@ -37,7 +37,10 @@
             props.updateStates(STATE_NAME, e.target.value);
         }
         function updateFilterDifficulty(e) {
-            props.updateStates(STATE_DIFFICULTY, e.target.value);
+            var val = '';
+            if (e.target.value != '0')
+                val = e.target.value;
+            props.updateStates(STATE_DIFFICULTY, val);
          }
         function updateFilterRoleSupport() { 
             props.updateStates(STATE_ROLE, ROLE_SUPPORT);
@@ -80,20 +83,20 @@
                 </div>
                 <div id="filters-roles" className="container-fluid filter-roles">
                     <ul className="row">
-                        <li className="col-4">
-                            <a href="#filters-roles" 
+                        <li id="damage" className="col-4">
+                            <a href="#damage" 
                                 className={"filter-img-damage d-block mx-auto " + css_bg_damage}
                                 value={props.filterHeroRole} onClick={updateFilterRoleDamage}></a>
                             <p className={"filter-role-name mx-auto text-center " + css_bg_damage}>DAMAGE</p>
                         </li>
-                        <li className="col-4">
-                            <a href="#filters-roles" 
+                        <li id="tank" className="col-4">
+                            <a href="#tank" 
                                 className={"filter-img-tank d-block mx-auto " + css_bg_tank}
                                 value={props.filterHeroRole} onClick={updateFilterRoleTank}></a>
                             <p className={"filter-role-name mx-auto text-center " + css_bg_tank}>TANK</p>
                         </li>
-                        <li className="col-4">
-                            <a href="#filters-roles" 
+                        <li id="support" className="col-4">
+                            <a href="#support" 
                                 className={"filter-img-support d-block mx-auto " + css_bg_support}
                                 value={props.filterHeroRole} onClick={updateFilterRoleSupport}></a>
                             <p className={"filter-role-name mx-auto text-center " + css_bg_support}>SUPPORT</p>
