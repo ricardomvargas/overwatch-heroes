@@ -120,27 +120,27 @@
         return(
             <div className="row hero-component">
                 <div className="col-12 col-lg-3 col-xl-2 text-center">
-                    <h2>{props.hero.apelido}</h2>
-                    <img className={"hero-portrait border border-dark bg-" + props.hero.posicao.toLowerCase()}
-                        src={"img/" + props.hero.apelido.toLowerCase() + "/portrait.png"}     
-                        title={props.hero.nome} alt={props.hero.nome} />
+                    <h2>{props.hero.nickname}</h2>
+                    <img className={"hero-portrait border border-dark bg-" + props.hero.role.toLowerCase()}
+                        src={"img/" + props.hero.nickname.toLowerCase() + "/portrait.png"}     
+                        title={props.hero.nickname} alt={props.hero.nickname} />
                 </div>
                 <div className="col-12 col-lg-2 order-md-2 order-lg-3 text-center pt-1 pt-lg-0">
                     <img className="img-icon-roles mr-2" 
-                        src={"img/" + props.hero.posicao.toLowerCase() + "_icon_small.png"} 
-                        title={props.hero.posicao} alt={props.hero.posicao} />
-                    <img src={"img/" + props.hero.dificuldade.toLowerCase() + "_icon.png"} 
-                        title={props.hero.dificuldade} alt={props.hero.dificuldade} />
+                        src={"img/" + props.hero.role.toLowerCase() + "_icon_small.png"} 
+                        title={props.hero.role} alt={props.hero.role} />
+                    <img src={"img/" + props.hero.difficulty.toLowerCase() + "_icon.png"} 
+                        title={props.hero.difficulty} alt={props.hero.difficulty} />
                 </div>
                 <div className="col-12 col-lg-7 col-xl-8 order-md-3 order-lg-2 align-self-md-center">
                     <ul>
-                        {props.hero.habilidades.map(function(hb) {
+                        {props.hero.skills.map(function(hb) {
                             var hbDetails = hb.split('|');
                             return(
                                 <li className="clearfix">
                                     <h2 className="bg-secondary text-white p-1">{hbDetails[0]}</h2>
                                     <img className="float-left mr-2 mb-2 bg-not-selected" 
-                                        src={"img/" + props.hero.apelido.toLowerCase() + "/" + hbDetails[2] + ".png"} 
+                                        src={"img/" + props.hero.nickname.toLowerCase() + "/" + hbDetails[2] + ".png"} 
                                         title={hbDetails[0]} alt={hbDetails[0]} />
                                     <p>{hbDetails[1]}</p>
                                 </li>
@@ -181,11 +181,11 @@
             var list = HEROES.filter(
                 function(hero) {
                     return (
-                        (this.state.filterHeroName === "" || hero.apelido.toLowerCase().indexOf(this.state.filterHeroName.toLowerCase()) !== -1) 
+                        (this.state.filterHeroName === "" || hero.nickname.toLowerCase().indexOf(this.state.filterHeroName.toLowerCase()) !== -1) 
                         && 
-                        (this.state.filterHeroRole === "" || hero.posicao.toLowerCase() === this.state.filterHeroRole)
+                        (this.state.filterHeroRole === "" || hero.role.toLowerCase() === this.state.filterHeroRole)
                         &&
-                        (this.state.filterHeroDifficulty === "" || hero.dificuldade.toLowerCase() === this.state.filterHeroDifficulty)
+                        (this.state.filterHeroDifficulty === "" || hero.difficulty.toLowerCase() === this.state.filterHeroDifficulty)
                     );
                 }.bind(this));
             this.setState({

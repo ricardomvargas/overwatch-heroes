@@ -1,41 +1,61 @@
 var HEROES = [
     {
       "key": "1",
-      "apelido": "Ana",
-      "nome": "Ana Amari",
-      "idade": "60",
-      "ocupacao": "Caçadora de recompensas",
-      "baseDeOperacao": "Cairo, Egito",
-      "afiliacao": "Overwatch (Anteriormente)",
-      "historia": "Uma das fundadoras de Overwatch, Ana usa suas habilidades e seu conhecimento para defender seu lar e as pessoas que ela ama. Como a Crise Ômnica teve um peso muito grande para o Egito, as forças de segurança esvaziadas e sem pessoal do país se apoiaram nos franco-atiradores de elite. Entres eles, Ana Amari, que era considerada por muitos a melhor do mundo. Sua destreza com as armas, tomada rápida de decisões e instintos, fizeram dela uma seleção natural para se juntar à força de ataque de Overwatch que terminou a guerra. Seguindo o sucesso da missão original de Overwatch, Ana serviu muitos anos como a Segunda no Comando para o Comandante de Ataque Morrison. Apesar de suas grandes responsabilidades liderando a organização, Ana se recusou a deixar as operações de combate. Ela continuou ativa até seus cinquenta anos de idade, até acreditarem que ela morreu nas mãos de uma agente da Talon conhecida como “Widowmaker”, durante uma missão de resgate de reféns.<br/>Na verdade, Ana sobreviveu a esse encontro, mesmo que gravemente ferida e tendo perdido seu olho direito. Durante sua recuperação, ela sentiu o peso de uma vida gasta no combate e decidiu permanecer distante dos conflitos mundiais que se alargavam. Entretanto, com o passar do tempo, ela se deu conta de que não podia fazer nada enquanto sua cidade e as pessoas inocentes ao seu redor eram ameaçados por outros. Agora, Ana voltou à luta para proteger seu país das forças que poderiam desestabilizá-lo; e mais importante, para manter sua família e seus aliados mais próximos em segurança.",
-      "dificuldade": "Easy",
-      "posicao": "Support",
-      "habilidades": 
+      "nickname": "Ana",
+      "name": "Ana Amari",
+      "age": "60",
+      "occupation": "Bounty Hunter",
+      "baseOfOperations": "Cairo, Egypt",
+      "affiliation": "Overwatch (formerly)",
+      "biography": "One of the founding members of Overwatch, Ana uses her skills and expertise to defend her home and the people she cares for. As the Omnic Crisis inflicted a heavy toll on Egypt, the country's depleted and undermanned security forces relied on elite snipers for support. Among them was Ana Amari, who was widely considered to be the world's best. Her superior marksmanship, decision-making, and instincts made her a natural selection to join the Overwatch strike team that would end the war. Following the success of Overwatch's original mission, Ana served for many years as Strike Commander Morrison's second-in-command. Despite her responsibilities in leading the organization, Ana refused to step away from combat operations. She remained on active duty well into her fifties, until she was believed to have been killed during a hostage rescue mission by the Talon operative known as Widowmaker. In truth, Ana survived that encounter, despite being gravely wounded and losing her right eye. During her recovery, she wrestled with the weight of a life spent in combat, and she chose to stay out of the world's growing conflicts. However, as time passed, she realized she could not sit on the sidelines while people threatened her city and the innocents around her. Now, Ana has rejoined the fight to protect her country from the forces that would destabilize it, and most importantly, to keep her family and her closest allies safe.",
+      "difficulty": "Hard",
+      "role": "Support",
+      "skills": 
         [ 
-          "RIFLE BIÓTICO|O rifle de Ana atira dardos que podem restaurar a vida de seus aliados ou causar dano continuado a seus inimigos. Ela é capaz de usar a mira telescópica de seu rifle para dar tiros incrivelmente precisos.|biotic_rifle",
-          "DARDO SONÍFERO|Ana dispara um dardo de sua arma secundária, deixando seus inimigos inconscientes (porém eles despertam ao receber dano).|sleep_dart",
-          "GRANADA BIÓTICA|Ana lança uma granada biótica que causa dano aos inimigos e cura os aliados em uma pequena área de efeito. Aliados afetados recebem por tempo limitado cura aumentada de todas as fontes, enquanto inimigos pegos pela explosão não podem se curar por alguns instantes.|biotic_granade",
-          "ESTIMULANTE|Depois que Ana atinge seus aliados com um estimulante de combate, eles causam mais dano e recebem menos dano dos ataques inimigos temporariamente.|nano_boost"
+          "BIOTIC RIFLE|Ana’s rifle shoots darts that can restore health to her allies or deal ongoing damage to her enemies. She can use the rifle’s scope to zoom in on targets and make highly accurate shots.|biotic_rifle",
+          "SLEEP DART|Ana fires a dart from her sidearm, rendering an enemy unconscious (though any damage will rouse them).|sleep_dart",
+          "BIOTIC GRENADE|Ana tosses a biotic bomb that deals damage to enemies and heals allies in a small area of effect. Affected allies briefly receive increased healing from all sources, while enemies caught in the blast cannot be healed for a few moments.|biotic_granade",
+          "NANO BOOST|After Ana hits one of her allies with a combat boost, they deal more damage, and take less damage from enemies’ attacks.|nano_boost"
         ]
     },
     {
       "key": "2",
-      "apelido": "Doomfist",
-      "nome": "Akande Ogundimu",
-      "idade": "45",
-      "ocupacao": "Mercenário",
-      "baseDeOperacao": "Oyo, Nigéria",
-      "afiliacao": "Talon",
-      "historia": "Recém-liberto de sua prisão, Doomfist está determinado a lançar o mundo em um novo conflito que ele acredita que fará a humanidade mais forte. Akande Ogundimu nasceu em uma família nigeriana de boa reputação e herdou sua companhia de tecnologia de prostéticos. Uma figura carismática e altamente inteligente, Ogundimu ajudou a expandir os negócios da família, os colocando rumo ao futuro, enquanto dedicava seu tempo livre a sua primeira paixão, as artes marciais. Ele treinou em estilos de luta africanos, incluindo Dambe e Gidigbo, assim como luta livre e outros sistemas de combate modernos, incorporando as técnicas mais eficientes em seu repertório. Ogundimu competiu em torneios por todo o continente, utilizando habilidade e intuição para ler os oponentes com sua grande velocidade e força.<br/>Mas quando perdeu seu braço como resultado da Crise Ômnica, pareceu ser o fim de sua carreira nas artes marciais, antes mesmo de atingir seu potencial. A prótese cibernética de sua companhia permitiu que ele se recuperasse de seus ferimentos, o tornando ainda mais forte, mas essas melhorias o impediram de competir. Ele tentou se devotar aos negócios com o mesmo zelo que tinha pela luta, mas não encontrou nada para preencher o vazio… até que ele recebeu uma nova oportunidade de Akinjide Adeyemi, mais conhecido como o segundo Doomfist, o Flagelo de Numbani.<br/>Adeyemi ofereceu a Ogundimu a chance de lutar com ele como mercenário. Após a cautela inicial, Ogundimu aceitou e descobriu que ele agora tinha uma arena na qual podia liberar sua nova e melhorada potencialidade. Por fim, Adeyemi o levou para a Talon. A crença da Talon de que a humanidade seria fortalecida pelo conflito reverberou com as experiências pessoais de Ogundimu. Mas além disso, os conflitos de poder da Talon criaram um novo desafio que permitiu que ele usasse seu talento na sala de reuniões da mesma forma que usava sua astúcia em combate.<br/>Adeyemi era um recurso muito útil à Talon, mas a organização via muito mais potencial em Ogundimu, com sua inteligência e habilidade de ser um comandante inspirador. Enquanto Adeyemi se sentia satisfeito com os lucros das pilhagens em Numbani, Ogundimu tinha uma visão muito maior. Essa diferença de ambição levaria Ogundimu a matar seu mestre e tomar o manto de Doomfist, junto com a manopla homônima.<br/>Como o novo Doomfist, Ogundimu subiu bastante na Talon e ajudou a orquestrar um conflito que a organização esperava que algum dia tomaria o mundo. Porém, antes de seu plano ser concluído, Ogundimu foi derrotado e capturado pela equipe de ataque tático da Overwatch, composta por Tracer, Winston e Genji. Ele foi aprisionado em uma instituição de segurança máxima por anos, onde esperou pacientemente o acontecimento dos eventos que tinha incitado.<br/>Finalmente, ele sentiu que o tempo havia chegado para seu retorno. Ele fugiu de sua prisão e recuperou a manopla de Doomfist depois de uma batalha unilateral com a nova defesa de Numbani formada por robôs OR15. Agora, ele retomou seu posto no conselho interno da Talon e está pronto para começar uma guerra que mais uma vez consumirá o planeta.",
-      "dificuldade": "Hard",
-      "posicao": "Damage",
-      "habilidades": 
+      "nickname": "Junkrat",
+      "name": "Jamison Fawkes",
+      "age": "39",
+      "occupation": "Anarchist, Thief, Demolitionist, Mercenary, Scavenger",
+      "baseOfOperations": "Junkertown, Australia (formerly)",
+      "affiliation": "Junkers (formerly)",
+      "biography": "Junkrat is an explosives-obsessed freak who lives to cause chaos and destruction. The attack on the Australian omnium's fusion core forever altered the landscape of the Outback. After the detonation, the area was transformed into a harsh, irradiated wasteland, littered with debris and the twisted fragments of the ruined facility, and unlivable to most. But there were some who survived. Calling themselves the Junkers, they scavenged the husk of the omnium and formed a lawless, cutthroat society in its shadow. Junkrat was one of them, eking out a living reclaiming metal and components from the ruins. Like many others, he was affected by the lingering radiation. This touch of madness made him ideal for handling dangerous explosives, a love which he turned into an obsession. He came to notoriety when he discovered an extremely valuable secret in the bones of the omnium. Though few knew the nature of what he found, he was nonetheless pursued by bounty hunters, gangs, and opportunists wherever he went, until he made a deal with the Junker enforcer Roadhog, who grudgingly agreed to be his personal bodyguard in exchange for a fifty-fifty share of the spoils. Now, with Roadhog in tow, Junkrat has left the Outback, and embarked upon an international crime spree leaving nothing but havoc and bedlam in his wake.",
+      "difficulty": "Moderate",
+      "role": "Damage",
+      "skills":  
         [
-          "CANHÃO DE MÃO|Doomfist dispara uma explosão de curto alcance de seu punho. A munição se regenera automaticamente depois de um curto período.|hand_cannon",
-          "ABALO SÍSMICO|Doomfist salta para a frente batendo no chão, trazendo inimigos próximos para sua direção.|seismic_slam",
-          "GANCHO ASCENDENTE|Doomfist acerta um gancho nos inimigos em sua frente, lançando-os no ar.|uppercut",
-          "SOCO FOGUETE|Depois de carregar, Doomfist se lança para frente e arremessa um inimigo para trás, causando dano adicional se ele atingir uma parede.|rocket_punch",
-          "IMPACTO METEORO|Doomfist salta para os céus, depois acerta o chão, causando dano significativo.|meteor_strike"
+          "Frag Launcher|Junkrat's Frag Launcher lobs grenades a significant distance. They bounce to reach their destination, and blow up when they strike an enemy.|frag_launcher",
+          "Concussion Mine|After placing one of his homemade Concussion Mines, Junkrat can trigger it to damage enemies and send them flying... or propel himself through the air.|concussion_mine",
+          "Steel Trap|Junkrat tosses out a giant, metal-toothed trap. Should an enemy wander too close to the trap, it clamps on, injuring and immobilizing them.|steel_trap",
+          "Total Mayhem|Junkrat's deranged sense of humor persists past his death. If killed, he drops several live grenades.|total_mayhem",
+          "RIP-Tire|Junkrat revs up a motorized tire bomb and sends it rolling across the battlefield, climbing over walls and obstacles. He can remotely detonate the RIP-Tire to deal serious damage to enemies caught in the blast, or just wait for it to explode on its own.|rip_tire"
+        ]
+    },
+    {
+      "key": "3",
+      "nickname": "Doomfist",
+      "name": "Akande Ogundimu",
+      "age": "45",
+      "occupation": "Mercenary",
+      "baseOfOperations": "Oyo, Nigeria",
+      "affiliation": "Talon",
+      "biography": "Recently freed from imprisonment, Doomfist is determined to plunge the world into a new conflict that he believes will make humanity stronger. Akande Ogundimu was born into a well-regarded Nigerian family, heir to its prosthetic-technology company. A highly intelligent and charismatic figure, Ogundimu helped to expand his family's business and position it for the future while dedicating his free time to his first love: competitive martial arts. He trained in traditional African fighting styles, including Dambe and Gidigbo, as well as in wrestling and other modern combat systems, incorporating the most effective techniques into his repertoire. Ogundimu competed in tournaments all over the continent, utilizing his intuition and ability to read opponents alongside his tremendous speed and strength. But when he lost his right arm in the aftermath of the Omnic Crisis, it seemed his martial arts career was finished before he had reached his prime. His company's cybernetic prosthetics allowed him to recover from his injuries, even making him stronger, but these enhancements rendered him ineligible for competition. He tried to devote himself to his business with the same zeal that he had for fighting, but he found nothing that could fill the void… until he was given a new opportunity by Akinjide Adeyemi, better known to the world as the second Doomfist, the Scourge of Numbani. Adeyemi offered Ogundimu the chance to fight with him as a mercenary. Initially wary, Ogundimu accepted, and discovered that he now had an arena in which he could unleash his enhanced capabilities. Eventually, Adeyemi brought him into the Talon organization. Talon's belief that humanity would be made stronger through conflict resonated with Ogundimu's personal experiences. Moreover, Talon's power struggles presented a new challenge that allowed him to use his talent in the boardroom along with his cunning as a combatant. Adeyemi was a useful asset to Talon, but the organization saw far greater potential in Ogundimu, with his intelligence and his ability to inspire as a commander. While Adeyemi was content to profit from raids on Numbani, Ogundimu had a grander vision. This difference in aspiration would lead Ogundimu to kill his teacher and take on the mantle of Doomfist, along with the eponymous gauntlet. As the new Doomfist, Ogundimu rose high in Talon and helped to orchestrate a conflict that the organization hoped would someday engulf the world. However, before their plan came to fruition, Ogundimu was defeated and captured by an Overwatch strike team that included Tracer, Winston, and Genji. He was imprisoned in a maximum-security facility for years, where he waited patiently for events he had incited to play out. Finally, he sensed that the time had come for him to return. He broke out of his prison and recovered Doomfist's gauntlet in a one-sided battle with Numbani's newly unveiled OR15 defense robots. Now, he has retaken his place in Talon's inner council, ready to spark a war that will consume the world once again.",
+      "difficulty": "Hard",
+      "role": "Damage",
+      "skills": 
+        [
+          "HAND CANNON|Doomfist fires a short-range burst from the knuckles of his fist. Its ammunition is automatically regenerated over a short time.|hand_cannon",
+          "SEISMIC SLAM|Doomfist leaps forward and smashes into the ground, knocking nearby enemies toward him.|seismic_slam",
+          "RISING UPPERCUT|Doomfist uppercuts enemies in front of him into the air.|uppercut",
+          "ROCKET PUNCH|After charging up, Doomfist lunges forward and knocks an enemy back, dealing additional damage if they impact a wall.|rocket_punch",
+          "METEOR STRIKE|Doomfist leaps into the sky, then crashes to the ground, dealing significant damage.|meteor_strike"
         ]
     }
   ]
