@@ -25,13 +25,12 @@
             'key': 'hard'
         }
     ];
-    /** Function with filter opions for listing Heroes.
-     * Contains methods to update states filters.
-     */
+    /** Filter component function.
+     * Contains methods to update states filters. */
     function HeroesFilter(props) {
-        var css_bg_damage = props.filterHeroRole === ROLE_DAMAGE ? "bg-damage" : "";
-        var css_bg_tank = props.filterHeroRole === ROLE_TANK ? "bg-tank" : "";
-        var css_bg_support = props.filterHeroRole === ROLE_SUPPORT ? "bg-support" : "";
+        var css_bg_damage = props.filterHeroRole === ROLE_DAMAGE ? "bg-damage filter-selected" : "";
+        var css_bg_tank = props.filterHeroRole === ROLE_TANK ? "bg-tank filter-selected" : "";
+        var css_bg_support = props.filterHeroRole === ROLE_SUPPORT ? "bg-support filter-selected" : "";
         // Update filters states:
         function updateFilterName(e) { 
             props.updateStates(STATE_NAME, e.target.value);
@@ -103,22 +102,26 @@
                         </li>
                     </ul>
                 </div>
-                <a href="#" onClick={resetStates}>Clean filters</a>
+                <div className="text-center mb-1">
+                    <a id="reset-filters" href="#" onClick={resetStates}>Reset filters</a>
+                </div>
             </section>
         );
     }
-    /** Function that display a list of Heroes.*/
+    /** Heroe list component.
+     * Function that display a list of Heroes. */
     function HeroesList(props) {
         return(
             <section id="heroes-list-component" className="container-fluid p-0">
                 <h1 className="font-weight-bold text-center bg-dark text-warning pt-2 pb-2">HEROES</h1>
-                {props.heroesList.map(function(hero) {
-                    return(<Hero hero={hero} />);
-                })}
+                    {props.heroesList.map(function(hero) {
+                        return (<Hero hero={hero} key={hero.cod} />);
+                    })}
             </section>
         );
     }
-    /** Function that display a hero. */
+    /** Hero component.
+     * Function that display a hero. */
     function Hero(props) {
         return(
             <div className="row hero-component">
@@ -128,7 +131,7 @@
                         src={"img/" + props.hero.nickname.toLowerCase() + "/portrait.png"}     
                         title={props.hero.nickname} alt={props.hero.nickname} />
                 </div>
-                <div className="col-12 col-lg-2 order-md-2 order-lg-3 text-center pt-1 pt-lg-0">
+                <div className="col-12 col-lg-2 order-md-2 order-lg-3 text-center pt-1 pt-lg-0 mb-1">
                     <img className="img-icon-roles mr-2" 
                         src={"img/" + props.hero.role.toLowerCase() + "_icon_small.png"} 
                         title={props.hero.role} alt={props.hero.role} />
@@ -137,10 +140,10 @@
                 </div>
                 <div className="col-12 col-lg-7 col-xl-8 order-md-3 order-lg-2 align-self-md-center">
                     <ul>
-                        {props.hero.skills.map(function(hb) {
+                        {props.hero.skills.map(function(hb, index) {
                             var hbDetails = hb.split('|');
                             return(
-                                <li className="clearfix">
+                                <li className="clearfix" key={index}>
                                     <h2 className="bg-secondary text-white p-1">{hbDetails[0]}</h2>
                                     <img className="float-left mr-2 mb-2 bg-not-selected" 
                                         src={"img/" + props.hero.nickname.toLowerCase() + "/" + hbDetails[2] + ".png"} 
@@ -154,11 +157,12 @@
             </div>
         );
     }
-    /** Main app class. */
+    /** Heroes App component.
+     * Main app class. */
     class HeroesApp extends React.Component{
         constructor(props) {
             super(props);
-            // Set the default states. In case of the list, the default is heroes.
+            // Set the default states. For the heroeList state, the default value is HEROES.
             this.state = {
                 filterHeroName: "",
                 filterHeroDifficulty: "",

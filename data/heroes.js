@@ -1,6 +1,6 @@
 var HEROES = [
     {
-      "key": "1",
+      "cod": "1",
       "nickname": "Ana",
       "name": "Ana Amari",
       "age": "60",
@@ -19,7 +19,7 @@ var HEROES = [
         ]
     },
     {
-      "key": "2",
+      "cod": "2",
       "nickname": "Doomfist",
       "name": "Akande Ogundimu",
       "age": "45",
@@ -39,7 +39,7 @@ var HEROES = [
         ]
     },
     {
-      "key": "3",
+      "cod": "3",
       "nickname": "Junkrat",
       "name": "Jamison Fawkes",
       "age": "39",
@@ -59,7 +59,7 @@ var HEROES = [
         ]
     },
     {
-      "key": "4",
+      "cod": "4",
       "nickname": "Lucio",
       "name": "Lúcio Correia dos Santos",
       "age": "26",
@@ -78,7 +78,7 @@ var HEROES = [
         ]
     },
     {
-      "key": "5",
+      "cod": "5",
       "nickname": "Moira",
       "name": "Moira O’Deorain",
       "age": "48",
@@ -97,7 +97,7 @@ var HEROES = [
         ]
     },
     {
-      "key": "6",
+      "cod": "6",
       "nickname": "Orisa",
       "name": "Orisa",
       "age": "1 Month",
@@ -117,7 +117,7 @@ var HEROES = [
         ]
     },
     {
-      "key": "7",
+      "cod": "7",
       "nickname": "Pharah",
       "name": "Fareeha Amari",
       "age": "32",
@@ -136,7 +136,7 @@ var HEROES = [
         ]
     },
     {
-      "key": "8",
+      "cod": "8",
       "nickname": "Reinhardt",
       "name": "Reinhardt Wilhelm",
       "age": "61",
@@ -156,7 +156,7 @@ var HEROES = [
         ]
     },
     {
-      "key": "9",
+      "cod": "9",
       "nickname": "Wrecking-Ball",
       "name": "Hammond",
       "age": "14",

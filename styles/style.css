@@ -1,7 +1,10 @@
 /******************
-SELETORES
+HTML TAG'S
 *******************/
-body {color: #5d5d5d}
+body {
+    color: #5d5d5d;
+    font-family: 'Source Sans Pro', sans-serif;
+}
 main {
     background-color: #f7f7f7;
     min-width: 320px;
@@ -9,18 +12,25 @@ main {
 h1 {font-size: 1.2em;}
 h2 {font-size: 1.1em}
 h3 {font-size: 1em}
+h1, h2, h3 {font-family: 'Oswald', sans-serif;}
 p {font-size: 0.8em}
-/*ul li a {display: inline-block}*/
 /******************
 ID'S
 *******************/
-/*#filter-difficulty option[value="easy"] {background: url(../img/easy_icon.png) no-repeat center;}*/
+#reset-filters {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 5px;
+    background-color: #333;
+    border: solid 1px #333;
+    letter-spacing: 0.1em;
+}
+#reset-filters:hover {background-color: #5d5d5d}
+#filters-component {font-family: 'Roboto', sans-serif;}
 /******************
 CLASSES
 *******************/
-/*A CLASSE ABAIXO FOI CRIADA PARA SUPRIR A NESCESSIDADE DE REDUZIR O TAMANHO DA IMAGEM. 
-PREISO FAZER ISSO EM UM PROGRMA DE EDIÇÃO DE IMAGENS*/
-.img-icon-roles {height: 30px}
 .site-logo{ width: 50%;}
 .title { 
     color: #e5d429;
@@ -31,7 +41,6 @@ PREISO FAZER ISSO EM UM PROGRMA DE EDIÇÃO DE IMAGENS*/
     display: block;
     margin: 0 auto;
 }
-/*.filter-roles a {width: 175px}*/
 .filter-block {width: 300px}
 .filter-role-name { width: 70px;}
 .filter-img-damage, .filter-img-tank, .filter-img-support {
@@ -39,6 +48,10 @@ PREISO FAZER ISSO EM UM PROGRMA DE EDIÇÃO DE IMAGENS*/
     height: 59px; 
     background-repeat: no-repeat; 
     background-position: center;
+}
+.filter-selected {
+    color: #fff;
+    border-bottom: solid 1px #fff;
 }
 .filter-img-damage { background-image: url(../img/damage_icon_mini.png); }
 .filter-img-tank { background-image: url(../img/tank_icon_mini.png);}
@@ -53,11 +66,6 @@ PREISO FAZER ISSO EM UM PROGRMA DE EDIÇÃO DE IMAGENS*/
 .bg-tank{background-color: #f9a32c}
 .bg-support{background-color:#02a34a}
 .bg-not-selected {background-color: #ccc}
-/*.weapon a, .abilities a{
-    background-color: #333;
-    display:inline-block;
-}
-.weapon a {float: left;}*/
 /**********************
     MEDIA QUERIES
 **********************/
@@ -65,7 +73,6 @@ PREISO FAZER ISSO EM UM PROGRMA DE EDIÇÃO DE IMAGENS*/
 @media (min-width: 576px) { }
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    /* .hero-component .order-md-3 { background-color: yellow;} */
     .site-logo{ width: 30%;}
 }
 /* Large devices (desktops, 992px and up)*/
@@ -91,15 +98,11 @@ PREISO FAZER ISSO EM UM PROGRMA DE EDIÇÃO DE IMAGENS*/
     .filter-img-support { background-image: url(../img/support_icon_mid.png);}
     .hero-portrait {margin-right: 5px;}
     .hero-component .img-skill {height: 100%;}
-    /* .hero-component .order-md-3 {background-color: red;} */
-    /******************
-    ID'S
-    *******************/
 }
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
     /******************
-    SELETORES
+    HTML TAG'S
     *******************/
     h1 {font-size: 1.3em;}
     h2 {font-size: 1.2em}
@@ -119,8 +122,4 @@ PREISO FAZER ISSO EM UM PROGRMA DE EDIÇÃO DE IMAGENS*/
     .filter-img-support { background-image: url(../img/support_icon_big.png);}
     .hero-portrait {margin-right: 5px;}
     .hero-component .img-skill {height: 100%;}
-    /* .hero-component .order-md-3 {background-color: gray;} */
-    /******************
-    ID'S
-    *******************/
 }
