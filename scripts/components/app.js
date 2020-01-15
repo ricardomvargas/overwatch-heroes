@@ -20,7 +20,7 @@
                 [name]: value
             }, this.updateList);
         }
-        resetStates(){
+        resetStates() {
             this.setState({
                 filterHeroName: "",
                 filterHeroDifficulty: "",
